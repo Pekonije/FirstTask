@@ -14,6 +14,8 @@ public class Employee {
     private int vacationDuration;
     private int requestedVacation;
     private int freeDaysLeft;
+    private int internship;
+    private String jmbg;
     private Date startVacation;
     private Date endVacation;
 
@@ -33,6 +35,10 @@ public class Employee {
 
     public void setEndVacation(Date endVacation) {
         this.endVacation = endVacation;
+    }
+
+    public void setJmbg(String jmbg) {
+        this.jmbg = jmbg;
     }
 
     public void setFreeDaysLeft(int a, int b) {
@@ -71,6 +77,14 @@ public class Employee {
 
     }
 
+    public void setInternship(int internship) {
+        this.internship = internship;
+    }
+
+    public int getInternship() {
+        return internship;
+    }
+
     public int getRequestedVacation() {
         return requestedVacation;
     }
@@ -100,5 +114,7 @@ public class Employee {
         return this.freeDaysLeft;
     }
 
-
+    public String getJmbg() {
+        return jmbg;
+    }
 }
